@@ -1,0 +1,13 @@
+[project]
+name = "argus-ledger-backend"
+version = "1.0.0"
+description = "ARGUS Ledger — audit-grade backend and PostgreSQL store for AI decisions (PS19)."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra -q"
+filterwarnings = [
+    "error::DeprecationWarning:app.*",
+]

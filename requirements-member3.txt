@@ -1,0 +1,2 @@
+# One-command Member 3 environment. The backend keeps its own requirements.txt.
+-r ai_engine/requirements.txt

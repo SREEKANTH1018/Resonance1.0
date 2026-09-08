@@ -1,0 +1,29 @@
+{
+  "input_text": "Customer application: eligibility satisfied; risk below threshold.",
+  "decision": "APPROVED",
+  "confidence": 0.91,
+  "reasons": [
+    "Eligibility satisfied",
+    "Risk below threshold"
+  ],
+  "evidence": [
+    {
+      "source": "policy.pdf",
+      "page": 4,
+      "content": "Eligibility requirements are satisfied.",
+      "relevance": 0.96,
+      "reason": "Eligibility requirement"
+    }
+  ],
+  "model": "Model-A",
+  "model_version": "1.2",
+  "policy_name": "Policy-01",
+  "policy_version": "3.1",
+  "human_review_required": false,
+  "resource": {
+    "latency_ms": 720,
+    "tokens": 1820,
+    "energy_wh": 0.02,
+    "carbon_g": 0.01
+  }
+}

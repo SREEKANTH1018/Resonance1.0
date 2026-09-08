@@ -1,0 +1,16 @@
+# ARGUS Ledger backend — runtime dependencies.
+# Pinned to the versions verified on Python 3.13/3.14. Regenerate with:
+#   .venv/Scripts/python -m pip freeze
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+sqlalchemy==2.0.52
+psycopg[binary]==3.3.5
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.3
+# Required by app/integrations/router.py (FastAPI Form/File parsing).
+python-multipart==0.0.32
+# Web retrieval for app/integrations/verification_orchestrator.py. Optional at
+# runtime (adapter degrades to a warning when TAVILY_API_KEY is unset) but
+# imported lazily, so it must be installed for the /verification/* routes.
+tavily-python==0.8.1
